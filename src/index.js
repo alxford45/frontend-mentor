@@ -1,1 +1,1 @@
-console.log("bootstrap");
+import style from "./style.scss";
