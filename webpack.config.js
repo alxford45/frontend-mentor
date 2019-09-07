@@ -2,7 +2,9 @@ const HmtlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: {
+    main: "./src/index.js"
+  },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
@@ -11,7 +13,6 @@ module.exports = {
     host: "localhost",
     port: 8080,
     hot: false,
-    publicPath: "./assets",
     contentBase: path.resolve(__dirname, "dist")
   },
   module: {
