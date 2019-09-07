@@ -18,9 +18,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
-        loaders: ["style-loader", "css-loader"]
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
