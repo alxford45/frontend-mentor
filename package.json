@@ -4,7 +4,7 @@
   "description": "Collection of attempted web template challenges from codementor.io",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server -o"
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
